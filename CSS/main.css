@@ -37,11 +37,21 @@ a#navbar{
     background-image: url(../Images/testbackground.png);
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-img#toptext-background{
     max-width: 100%;
     height: auto;
+}
+img#portrait{
+    width: auto;
+    max-height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p#paragraph0{
+    max-height: 25rem;
+    width: auto;
+    text-align: center;
+    font-size: 300%;
 }
 
 img#image1{
