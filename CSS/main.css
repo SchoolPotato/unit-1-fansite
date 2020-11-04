@@ -50,6 +50,8 @@ img#portrait{
     padding: 0.7rem;
     border: 0.7rem solid #290029;
     border-radius: 0.7rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 p#paragraph0{
     max-height: 25rem;
