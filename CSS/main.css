@@ -46,6 +46,10 @@ img#portrait{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: gold;
+    padding: 0.7rem;
+    border: 0.7rem solid #290029;
+    border-radius: 0.7rem;
 }
 p#paragraph0{
     max-height: 25rem;
