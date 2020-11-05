@@ -105,13 +105,6 @@ p#paragraph0{
     font-size: 300%;
     margin: 0.7rem;
 }
-.toptext-darkmode{
-    background-image: url(../Images/testbackground-dark.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
-}
 
 img#image1{
     float: left;
@@ -180,6 +173,10 @@ p#paragraph1-darkmode{
     color: white;
 }
 
+.main-content{
+    background-image: url("../Images/background.png");
+}
+
 .main-container{
-    background-image: url();
+    background-image: url("../Images/background-extender.png");
 }
