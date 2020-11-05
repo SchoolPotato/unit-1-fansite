@@ -1,5 +1,8 @@
 body {
     margin: 0px;
+    border-left: 0.2rem solid #290029;
+    border-right: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
 }
 body#darkmode {
     margin: 0px;
@@ -16,16 +19,12 @@ body#darkmode {
 .topbar {
     background-color: #BFD1FF;
     margin: 0px;
-    border-left: 0.2rem solid #290029;
-    border-right: 0.2rem solid #290029;
     border-top: 0.2rem solid #290029;
 }
 
 .topbar-darkmode{
     background-color: #180c1a;
     margin: 0px;
-    border-left: 0.2rem solid #290029;
-    border-right: 0.2rem solid #290029;
     border-top: 0.2rem solid #290029;
 }
 .topbar-darkmode > img {
@@ -39,7 +38,8 @@ body#darkmode {
 .navbar{
     background-color: #91aff0;
     margin: 0px;
-    border: 0.2rem solid #290029;
+    border-top: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
 }
 a#navbar{
     color: royalblue;
@@ -115,7 +115,7 @@ p#paragraph0{
 
 img#image1{
     float: left;
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
@@ -129,7 +129,7 @@ p#paragraph1{
 
 img#image2{
     float: right;
-    max-width: 500px;
+    max-width: 30rem;
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
@@ -154,4 +154,32 @@ p#paragraph1-darkmode{
     max-width: 60rem;
     margin: 2rem;
     color: white;
+}
+
+.footer{
+    position: relative;
+    width: 98.3%;
+    margin: 0rem;
+    border-right: 0.2rem solid #290029;
+    border-top: 0.2rem solid #290029;
+    background-color: white;
+}
+.footer > h5{
+    color: black;
+}
+
+.footer-darkmode{
+    position: relative;
+    width: 98.3%;
+    margin: 0rem;
+    border-right: 0.2rem solid #290029;
+    border-top: 0.2rem solid #290029;
+    background-color: #000000;
+}
+.footer-darkmode > h5{
+    color: white;
+}
+
+.main-container{
+    background-image: url();
 }
