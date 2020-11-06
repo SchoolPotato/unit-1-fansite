@@ -1,26 +1,40 @@
-body {
+body#main {
     margin: 0px;
     border-left: 0.2rem solid #290029;
     border-right: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
-    background-image: url("../Images/background-extended.png");
-    background-position: bottom;
+    background-image: url("../Images/background-light.png");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
-body#darkmode {
+body#main-darkmode {
+    margin: 0px;
+    background-color: #000000;
+}
+
+body#gallery-background {
+    margin: 0px;
+    border-left: 0.2rem solid #290029;
+    border-right: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
+    background-position: bottom;
+    background-image: url("../Images/background-extended-light.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: #92C1DB;
+}
+body#gallery-darkmode {
     margin: 0px;
     background-color: #000000;
 }
 
 .topbar > img {
-    max-width: 25%;
+    max-width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
 }
 .topbar {
-    background-color: #BFD1FF;
+    background-color: #000000;
     margin: 0px;
     border-top: 0.2rem solid #290029;
 }
@@ -72,12 +86,12 @@ a#navbar-darkmode{
 }
 
 .toptext{
-    background-image: url(../Images/testbackground.png);
+    background-image: url(../Images/transparent-background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
-    border-top: 0.6rem solid #BFD1FF;
+    border-top: 0.6rem solid #000000;
 }
 .toptext-darkmode{
     background-image: url(../Images/testbackground-dark.png);
@@ -115,12 +129,17 @@ img#image1{
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
+    border-radius: 1rem;
 }
 p#paragraph1{
     float: right;
     font-size: 400%;
     max-width: 60rem;
-    margin: 2rem;
+    margin: 1.8rem;
+    padding: 0.2rem;
+    border: 0.3rem solid #250025;
+    border-radius: 1rem;
+    background-color: rgba(255,255,255,0.9);
 }
 
 img#image2{
@@ -129,12 +148,17 @@ img#image2{
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
+    border-radius: 1rem;
 }
 p#paragraph2{
     float: left;
     font-size: 400%;
     max-width: 55rem;
-    margin: 2rem;
+    margin: 1.8rem;
+    padding: 0.2rem;
+    border: 0.3rem solid #250025;
+    border-radius: 1rem;
+    background-color: rgba(255,255,255,0.9);
 }
 
 p#paragraph2-darkmode{
@@ -177,9 +201,53 @@ p#paragraph1-darkmode{
 }
 
 .main-content{
-    background-image: url("../Images/background.png");
+    background-image: url("../Images/background-light.png");
 }
 
 .main-container{
-    background-image: url("../Images/background-extender.png");
+    background-image: url("../Images/background-extender-light.png");
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.flex-item{
+    max-width: 29%;
+    height: auto;
+    margin: 0.2rem;
+    border: 0.2rem lightskyblue solid;
+}
+
+p#paragraph3{
+    max-height: 25rem;
+    width: auto;
+    text-align: center;
+    font-size: 300%;
+    margin: 16rem;
+}
+
+a#wikilink-darkmode{
+    color: white;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 100%;
+    text-align: center;
+}
+
+a#wikilink{
+    color: darkblue;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 100%;
+    text-align: center;
 }
