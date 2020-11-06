@@ -3,7 +3,8 @@ body#main {
     border-left: 0.2rem solid #290029;
     border-right: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
-    background-image: url("../Images/background-light.png");
+    background-position: bottom left;
+    background-image: url("../Images/background-extended-light.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
