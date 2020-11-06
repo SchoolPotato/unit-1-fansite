@@ -10,7 +10,13 @@ body#main {
 }
 body#main-darkmode {
     margin: 0px;
-    background-color: #000000;
+    border-left: 0.2rem solid #290029;
+    border-right: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
+    background-position: bottom left;
+    background-image: url("../Images/background-extended.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 body#gallery-background {
