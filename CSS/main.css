@@ -68,7 +68,7 @@ button#darkmode{
     display: inline-block;
     *display: inline;
     zoom: 1;
-    width: 100%;
+    width: 32%;
     text-align: center;    
 }
 
