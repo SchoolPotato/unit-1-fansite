@@ -6,11 +6,11 @@ function darkModeSwitch(){
     var darkFooterElement = document.getElementsByClassName("footer-darkmode");
     var toptextElement = document.getElementsByClassName("toptext");
     var darkToptextElement = document.getElementsByClassName("toptext-darkmode");
-    /*var navbarContainerElement = document.getElementsByClassName("navbar");
-    var darkNavbarContainerElement = document.getElementsByClassName("navbar-darkmode");
-    var navbarElement = document.getElementsById("navbar");
-    var darkNavbarElement = document.getElementsByID("navbar-darkmode");*/
-
+    var linkElements = document.getElementsByTagName("a");
+    var navbarElement = document.getElementsByClassName("navbar");
+    var darkNavbarElement = document.getElementsByClassName("navbar-darkmode");
+    var topbarElement = document.getElementsByTagName("img");
+    
     //changing elements to darkmode elements
     if (bodyElement[0].className == "main"){
         bodyElement[0].className = "main-darkmode";
@@ -19,9 +19,10 @@ function darkModeSwitch(){
         paragraphElements[2].id = "paragraph2-darkmode";
         footerElement[0].className = "footer-darkmode";
         toptextElement[0].className = "toptext-darkmode";
-        navbarContainerElement[0].className = "navbar-darkmode";
-        navbarElement[0].id = "navbar-darkmode";
-        navbarElement[1].id = "navbar-darkmode";
+        navbarElement[0].className = "navbar-darkmode";
+        linkElements[0].id = "navbar-darkmode";
+        linkElements[1].id = "navbar-darkmode";
+        topbarElement[0].src = "Images/header-background-darkmode.png";
     }
 
     //changing elements back to lightmode
@@ -32,8 +33,9 @@ function darkModeSwitch(){
         paragraphElements[2].id = "paragraph2";
         darkFooterElement[0].className = "footer";
         darkToptextElement[0].className = "toptext";
-        darkNavbarContainerElement[0].className = "navbar";
-        darkNavbarElement[0].id = "navbar";
-        darkNavbarElement[1].id = "navbar";
+        darkNavbarElement[0].className = "navbar";
+        linkElements[0].id = "navbar";
+        linkElements[1].id = "navbar";
+        topbarElement[0].src = "Images/header-background.png";
     }
 }

@@ -59,8 +59,17 @@ a#navbar{
     display: inline-block;
     *display: inline;
     zoom: 1;
-    width: 49%;
+    width: 33%;
     text-align: center;
+}
+button#darkmode{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 100%;
+    text-align: center;    
 }
 
 .navbar-darkmode{
@@ -76,7 +85,7 @@ a#navbar-darkmode{
     display: inline-block;
     *display: inline;
     zoom: 1;
-    width: 49%;
+    width: 33%;
     text-align: center;
 }
 
@@ -86,7 +95,7 @@ a#navbar-darkmode{
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
-    border-top: 0.6rem solid #000000;
+    border-top: 0.6rem solid #0a0809;
 }
 .toptext-darkmode{
     background-image: url(../Images/background-extender.png);
@@ -94,7 +103,7 @@ a#navbar-darkmode{
     background-repeat: repeat;
     max-width: 100%;
     height: auto;
-    border-top: 0.6rem solid #180c1a;
+    border-top: 0.6rem solid #0a0809;
 }
 
 img#portrait{
@@ -121,7 +130,7 @@ p#paragraph0{
 
 img#image1{
     float: left;
-    max-width: 25rem;
+    max-width: 45rem;
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
@@ -140,11 +149,12 @@ p#paragraph1{
 
 img#image2{
     float: right;
-    max-width: 30rem;
+    max-width: 40rem;
     height: auto;
     margin: 2rem;
     border: 0.2rem solid #290029;
     border-radius: 1rem;
+    clear: right;
 }
 p#paragraph2{
     float: left;
