@@ -7,15 +7,18 @@
     <meta name="author" content="Alex Welton">
     <meta name="description" content="A fansite for TESTIMAGE, made for school.">
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="JS/gallery.js"></script>
 </head>
-<body id="gallery-background">
+<body class="main">
     <div class="topbar">
         <img id="topbar" src="Images/header-background.png">
     </div>
     <div class="main-container">
         <div class="navbar">
-            <a id="navbar" href="index.html">Page 1</a>
-            <a id="navbar" href="gallery.html">Page 2</a>
+            <a id="navbar" href="index.html">Home</a>
+            <a id="navbar" href="gallery.html">Gallery</a>
+            <button id="button" onclick="darkModeSwitch()">Dark Mode</button>
+            <button id="button" onclick="triviaQuiz()">Trivia Quiz</button>
         </div>
         <div class="flex-container">
             <img class="flex-item" src="Images/calvin.png">
@@ -27,12 +30,12 @@
             <img class="flex-item" src="Images/yukon-ho.png">
             <img class="flex-item" src="Images/sleepy2.png">
             <img class="flex-item" src="Images/jammin.png">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KckYcuiKAN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ndi-77j6xkc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <a id="wikilink" href="https://calvinandhobbes.fandom.com/wiki/Main_Page">More information (and images, most likely) here.</a>
     </div>
     <fieldset class="footer">
-        <h5 style="margin: 0px; text-align: center;">Test images created by Alexander Welton</h5>
+        <h5 style="margin: 0px; text-align: center;">Characters owned by Bill Watterson, Website by Alexander Welton, Font is SFCartoonistHand</h5>
     </fieldset>
-    <script src="JS/gallery.js"></script>
 </body>
 </html>
