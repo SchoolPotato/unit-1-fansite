@@ -1,12 +1,16 @@
+@font-face {
+    font-family: SFCartoonistHand;
+    src: url("../Fonts/SFCartoonistHand.ttf");
+}
 body.main {
     margin: 0px;
     border-left: 0.2rem solid #290029;
     border-right: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
     background-position: bottom left;
-    background-image: url("../Images/background-extended-light.png");
+    background-image: url("../Images/background-extended-light.png"), url("../Images/background-extender-light.png");
     background-color: #93c2dc;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     background-size: 100%;
 }
 body.main-darkmode {
@@ -15,8 +19,8 @@ body.main-darkmode {
     border-right: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
     background-position: bottom left;
-    background-image: url("../Images/background-extended.png");
-    background-repeat: no-repeat;
+    background-image: url("../Images/background-extended.png"), url("../Images/background-extender.png");
+    background-repeat: no-repeat, repeat;
     background-size: 100%;
 }
 
@@ -53,6 +57,26 @@ body#gallery-darkmode {
     border-top: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
 }
+.menu{
+    background-color: #91aff0;
+    margin: 0px;
+    border-top: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
+    display: none;
+}
+
+a#menu{
+    color: royalblue;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 33%;
+    text-align: center;
+    font-family: SFCartoonistHand;
+}
+
 a#navbar{
     color: royalblue;
     font-size: 200%;
@@ -62,8 +86,9 @@ a#navbar{
     zoom: 1;
     width: 33%;
     text-align: center;
+    font-family: SFCartoonistHand;
 }
-button#darkmode{
+button#button{
     font-size: 200%;
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
@@ -72,6 +97,25 @@ button#darkmode{
     width: 32%;
     text-align: center  
 }
+button#button-darkmode{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 32%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.menu-darkmode{
+    background-color: #000000;
+    margin: 0px;
+    border-top: 0.2rem solid #290029;
+    border-bottom: 0.2rem solid #290029;
+    display: none;
+}
 
 .navbar-darkmode{
     background-color: #000000;
@@ -79,10 +123,21 @@ button#darkmode{
     border-top: 0.2rem solid #290029;
     border-bottom: 0.2rem solid #290029;
 }
+
+a#menu-darkmode{
+    color: #b6ffba;
+    font-size: 200%;
+    font-family: SFCartoonistHand;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 33%;
+    text-align: center;
+}
 a#navbar-darkmode{
     color: #b6ffba;
     font-size: 200%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: SFCartoonistHand;
     display: inline-block;
     *display: inline;
     zoom: 1;
@@ -137,11 +192,10 @@ img#image1{
     margin: 2rem;
     border: 0.2rem solid #290029;
     border-radius: 1rem;
-    font-family: 
 }
 p#paragraph1{
     float: right;
-    font-size: 400%;
+    font-size: 340%;
     max-width: 50%;
     margin: 1.8rem;
     padding: 0.2rem;
@@ -162,7 +216,7 @@ img#image2{
 }
 p#paragraph2{
     float: left;
-    font-size: 400%;
+    font-size: 340%;
     max-width: 50%;
     margin: 1.8rem;
     padding: 0.2rem;
@@ -174,7 +228,7 @@ p#paragraph2{
 
 p#paragraph2-darkmode{
     float: left;
-    font-size: 400%;
+    font-size: 340%;
     max-width: 50%;
     margin: 1.8rem;
     padding: 0.2rem;
@@ -186,7 +240,7 @@ p#paragraph2-darkmode{
 }
 p#paragraph1-darkmode{
     float: right;
-    font-size: 400%;
+    font-size: 340%;
     max-width: 50%;
     margin: 1.8rem;
     padding: 0.2rem;
@@ -350,7 +404,74 @@ a#wikilink{
         font-family: SFCartoonistHand;
     }
 }
-@font-face {
-    font-family: SFCartoonistHand;
-    src: url("../Fonts/SFCartoonistHand.ttf");
+
+@media (max-width: 900px) {
+    img#image1{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        height: auto;
+        border: 0.2rem solid #290029;
+        border-radius: 1rem;
+    }
+    p#paragraph1{
+        font-size: 300%;
+        max-width: 100%;
+        margin: 1.8rem;
+        padding: 0.2rem;
+        border: 0.3rem solid #250025;
+        border-radius: 1rem;
+        background-color: rgba(255,255,255,0.9);
+        font-family: SFCartoonistHand;
+    }
+    
+    img#image2{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        height: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0.2rem solid #290029;
+        border-radius: 1rem;
+        clear: right;
+    }
+    p#paragraph2{
+        font-size: 300%;
+        max-width: 100%;
+        margin: 1.8rem;
+        padding: 0.2rem;
+        border: 0.3rem solid #250025;
+        border-radius: 1rem;
+        background-color: rgba(255,255,255,0.9);
+        font-family: SFCartoonistHand;
+    }
+    
+    p#paragraph2-darkmode{
+        font-size: 300%;
+        max-width: 100%;
+        margin: 1.8rem;
+        padding: 0.2rem;
+        border: 0.3rem solid #250025;
+        border-radius: 1rem;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        font-family: SFCartoonistHand;
+    }
+    p#paragraph1-darkmode{
+
+        font-size: 300%;
+        max-width: 100%;
+        margin: 1.8rem;
+        padding: 0.2rem;
+        border: 0.3rem solid #250025;
+        border-radius: 1rem;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        font-family: SFCartoonistHand;
+    }
 }
